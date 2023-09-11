@@ -1,0 +1,27 @@
+<!-- Slideshow starts -->
+
+<section class="row-fluid expand row-padding-default" style="background:#F6FBFE;">
+  <div class="container">
+    <h6 style="padding-bottom:60px;">Researcher Profiles</h6>
+    <div id='slideshow-slides' class="slideshow-container">
+      [loop query="posts_per_page=11&amp;category_name=Researcher Profiles"]
+        <div class="slideshow-fade">
+          <div class="span3">[image_with_src]</div>
+          <div class="span9 profile-slide-content">
+            <p class="profile-name">[cf researcher-profile-title]</p>
+            <p class="profile-role">[cf researcher-profile-role]</p>
+            <h3 style="margin-bottom:60px;">[cf researcher-profile-blurb]</h3>
+            <p class="read-more-text-link profile-read-more">[link_with_content content="read more"]</p>
+          </div>
+        </div>
+      [/loop]
+    </div>
+    <div id="slideshow-dots" class="slideshow-dots">
+      [loop query="posts_per_page=11&amp;category_name=Researcher Profiles"]
+        <span class="dot"></span>
+      [/loop]
+    </div>
+  </div>
+</section>
+
+<!-- End -->
